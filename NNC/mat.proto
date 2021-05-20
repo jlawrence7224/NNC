@@ -1,0 +1,14 @@
+
+
+syntax = "proto2";
+
+package mat;
+
+message MatFlt {
+  optional uint32 rows = 1;
+  optional uint32 cols = 2;
+  optional uint32 anc = 3;
+  repeated float data = 4 [packed=true];
+}
+
+
